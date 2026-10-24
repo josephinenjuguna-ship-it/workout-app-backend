@@ -1,8 +1,10 @@
 from marshmallow import (
-    Schema, fields, validate, validates_schema,
-    ValidationError, EXCLUDE
+    Schema,
+    fields,
+    validate,
+    validates_schema,
+    ValidationError
 )
-
 
 class WorkoutExerciseSchema(Schema):
     id = fields.Int(dump_only=True)
