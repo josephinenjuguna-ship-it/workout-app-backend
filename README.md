@@ -47,7 +47,6 @@ git clone https://github.com/josephinenjuguna-ship-it/workout-app-backend.git
 cd workout-app-backend
 ```
 
-Replace `YOUR-USERNAME` with your GitHub username.
 
 ### 2. Install dependencies
 
@@ -69,14 +68,6 @@ pipenv shell
 cd server
 ```
 
-### 5. Set up the database
-
-Initialize migrations only if the migrations directory does not already exist:
-
-```bash
-flask --app app db init
-```
-
 Apply existing database migrations:
 
 ```bash
@@ -90,7 +81,7 @@ flask --app app db migrate -m "Update database models"
 flask --app app db upgrade
 ```
 
-### 6. Seed the database
+### 5. Seed the database
 
 ```bash
 python seed.py
