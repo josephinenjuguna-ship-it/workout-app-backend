@@ -53,7 +53,7 @@ cd workout-app-backend
 Ensure Python and Pipenv are installed.
 
 ```bash
-pipenv install --dev
+pipenv install 
 ```
 
 ### 3. Activate the virtual environment
