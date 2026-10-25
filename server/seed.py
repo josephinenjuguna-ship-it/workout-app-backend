@@ -9,8 +9,6 @@ from models import db, Workout, Exercise, WorkoutExercise
 with app.app_context():
 
     print("Clearing existing data...")
-
-    # Delete join records first because they contain foreign keys
     WorkoutExercise.query.delete()
     Workout.query.delete()
     Exercise.query.delete()
